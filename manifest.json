@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Transcript Summarizer",
+  "version": "1.0",
+  "description": "Summarize YouTube transcripts using AI.",
+  "permissions": ["storage", "tabs", "scripting", "activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Summarize Video"
+  },
+  "options_page": "settings.html",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+ "icons": {
+  "16": "icon.png",
+  "48": "icon.png",
+  "128": "icon.png"
+}
+
+} 
+
+
+
+
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Extension Settings</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f9f9f9;
+    }
+    h2 {
+      color: #333;
+    }
+    select, textarea, button {
+      width: 100%;
+      font-size: 16px;
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h2>Update AI Platform and Prompt</h2>
+
+  <label for="platform">Choose Platform:</label>
+  <select id="platform">
+    <option value="chatgpt">ChatGPT</option>
+    <option value="gemini">Gemini</option>
+    <option value="claude">Claude</option>
+  </select>
+
+  <label for="prompt">Custom Prompt:</label>
+  <textarea id="prompt" placeholder="e.g. Summarize this YouTube video: [transcript]"></textarea>
+
+  <button id="update">Update Settings</button>
+
+  <script src="options.js"></script>
+</body>
+</html>

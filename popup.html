@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Transcript Summarizer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 16px;
+      width: 250px;
+    }
+    button {
+      padding: 10px;
+      width: 100%;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h3>Transcript Summarizer</h3>
+  <p>Welcome to the extension.</p>
+  <button id="openSettings">Open Settings</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Settings</title>
+</head>
+<body>
+  <h3>Choose AI Platform</h3>
+  <select id="platform">
+    <option value="chatgpt">ChatGPT</option>
+    <option value="gemini">Gemini</option>
+    <option value="claude">Claude</option>
+  </select>
+
+  <h3>Custom Prompt</h3>
+  <textarea id="prompt" rows="4" cols="50">Summarize this YouTube video: [transcript]</textarea>
+
+  <br>
+  <button id="save">Save</button>
+
+  <script src="popup.js"></script>
+</body>
+</html> -->
